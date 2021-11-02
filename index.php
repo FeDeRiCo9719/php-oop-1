@@ -9,19 +9,19 @@ metodi d'istanza che abbiamo visto stamattina e create un file index.php in cui:
 <?php
 require_once __DIR__ . '/classes/Movie.php';
 
-$Hellboy = new Movie(2004,"122 min","azione","Guillermo del Toro","Stati Uniti d'America");
-// $Hellboy->anno = 2004;
-// $Hellboy->durata = "122 min";
-// $Hellboy->genere = "azione, fantascienza, fantastico, avventura";
-// $Hellboy->regista = "Guillermo del Toro";
-// $Hellboy->paeseProduzione = "Stati Uniti d'America";
-// echo $Hellboy->anno;
+$Hellboy = new Movie(2004,"122 min","Azione","Guillermo del Toro","Stati Uniti d'America");
+echo  "<h2>Hellboy</h2>";
+echo  "<p>Anno: {$Hellboy->getAnno()}</p>";
+echo  "<p>Durata: {$Hellboy->getDurata()}</p>";
+echo  "<p>genere: {$Hellboy->getGenere()}</p>";
+echo  "<p>regista: {$Hellboy->getRegista()}</p>";
+echo  "<p>paeseProduzione: {$Hellboy->getPaeseProduzione()}</p>";
 
-$SpiderMan = new Movie(2002,"121 min","fantastico","Sam Raimi","Stati Uniti d'America");
-// $SpiderMan->anno = "";
-// $SpiderMan->durata = "";
-// $SpiderMan->genere = "";
-// $SpiderMan->regista = "";
-// $SpiderMan->paeseProduzione = "";
 
-var_dump($Hellboy,$SpiderMan);
+$SpiderMan = new Movie(2002,"121 min","Fantastico","Sam Raimi","Stati Uniti d'America");
+echo  "<h2>SpiderMan</h2>";
+echo  "<p>Anno: {$SpiderMan->getAnno()}</p>";
+echo  "<p>Durata: {$SpiderMan->getDurata()}</p>";
+echo  "<p>genere: {$SpiderMan->getGenere()}</p>";
+echo  "<p>regista: {$SpiderMan->getRegista()}</p>";
+echo  "<p>paeseProduzione: {$SpiderMan->getPaeseProduzione()}</p>";
